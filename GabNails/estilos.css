@@ -1,0 +1,1183 @@
+/* =========================================
+   GAB-NAILS
+   HOJA DE ESTILOS
+========================================= */
+html {
+    scroll-behavior: smooth;
+}
+
+/* QUITAR ESPACIOS PREDETERMINADOS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   PÁGINA GENERAL
+========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFF9F7;
+    color: #3E3034;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+header {
+    height: 85px;
+    background-color: #FFF9F7;
+
+    display: flex;
+    align-items: center;
+
+    padding: 7px 7%;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* LOGO */
+
+header img {
+    width: 68px;
+    height: 68px;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 2px solid #E4B8B5;
+}
+
+
+/* NOMBRE */
+
+header h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 26px;
+    font-style: italic;
+
+    color: #713E4A;
+
+    margin-left: 15px;
+}
+
+
+/* =========================================
+   MENÚ
+========================================= */
+
+nav {
+    margin-left: auto;
+}
+
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+
+    gap: 30px;
+}
+
+
+nav ul li {
+    display: inline;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+
+    color: #713E4A;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    padding-bottom: 5px;
+
+    transition: 0.3s;
+}
+
+
+nav ul li a:hover {
+    color: #C7848F;
+
+    border-bottom: 2px solid #C7848F;
+}
+
+
+/* =========================================
+   SECCIÓN PRINCIPAL
+========================================= */
+
+body > section:first-of-type {
+    height: 250px;
+
+    background-color: #F3E3DE;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 9%;
+}
+
+
+/* TÍTULO PRINCIPAL */
+
+body > section:first-of-type h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 47px;
+    font-style: italic;
+
+    color: #713E4A;
+
+    margin-bottom: 10px;
+}
+
+
+/* DESCRIPCIÓN */
+
+body > section:first-of-type p {
+    width: 40%;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+
+    color: #57464A;
+}
+
+
+/* IMAGEN PRINCIPAL */
+
+body > section:first-of-type img {
+    position: absolute;
+
+    right: 9%;
+    top: 20px;
+
+    width: 330px;
+    height: 210px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   QUÉ OFRECEMOS
+========================================= */
+
+body > section:nth-of-type(2) {
+    background-color: #FFF9F7;
+
+    text-align: center;
+
+    padding: 22px 7%;
+}
+
+
+/* TÍTULO */
+
+body > section:nth-of-type(2) > h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 29px;
+    font-style: italic;
+
+    color: #713E4A;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+body > section:nth-of-type(2) div {
+    width: 29%;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    margin: 0 1%;
+
+    background-color: #FFFFFF;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(113, 62, 74, 0.15);
+
+    transition: 0.3s;
+}
+
+
+/* EFECTO AL PASAR EL MOUSE */
+
+body > section:nth-of-type(2) div:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(113, 62, 74, 0.25);
+}
+
+
+/* =========================================
+   IMÁGENES DE SERVICIOS
+========================================= */
+
+body > section:nth-of-type(2) div img {
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 0;
+
+    border-radius: 0;
+}
+
+
+/* =========================================
+   NOMBRE DE SERVICIOS
+========================================= */
+
+body > section:nth-of-type(2) h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 19px;
+
+    color: #9B5968;
+
+    margin: 9px 5px 5px;
+}
+
+
+/* =========================================
+   DESCRIPCIÓN DE SERVICIOS
+========================================= */
+
+body > section:nth-of-type(2) div p {
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    color: #57464A;
+
+    padding: 0 15px 12px;
+}
+
+
+/* =========================================
+   CONTACTO
+========================================= */
+
+body > section:last-of-type {
+    background-color: #EAD2CC;
+
+    text-align: center;
+
+    padding: 15px 20px;
+}
+
+
+/* TÍTULO CONTACTO */
+
+body > section:last-of-type h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+    font-style: italic;
+
+    color: #713E4A;
+
+    margin-bottom: 9px;
+}
+
+
+/* INFORMACIÓN DE CONTACTO */
+
+body > section:last-of-type p {
+    display: inline-block;
+
+    color: #49373C;
+
+    font-size: 13px;
+
+    margin: 4px 12px;
+}
+
+
+/* =========================================
+   PIE DE PÁGINA
+========================================= */
+
+footer {
+    background-color: #5D3540;
+
+    color: #FFF9F7;
+
+    text-align: center;
+
+    padding: 11px 20px;
+
+    font-size: 12px;
+}
+
+
+footer p {
+    display: inline-block;
+
+    margin-right: 25px;
+}
+
+
+footer a {
+    color: #F4D9D5;
+
+    text-decoration: none;
+}
+
+
+footer a:hover {
+    color: #FFFFFF;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   DISEÑO PARA CELULAR
+========================================= */
+
+@media (max-width: 800px) {
+
+    /* ENCABEZADO */
+
+    header {
+        height: auto;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        padding: 10px;
+    }
+
+
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    header h2 {
+        font-size: 22px;
+    }
+
+
+    /* MENÚ */
+
+    nav {
+        width: 100%;
+
+        margin: 10px 0 0;
+    }
+
+
+    nav ul {
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+
+    /* PORTADA */
+
+    body > section:first-of-type {
+        height: auto;
+
+        text-align: center;
+
+        padding: 25px 20px;
+    }
+
+
+    body > section:first-of-type h1 {
+        font-size: 36px;
+    }
+
+
+    body > section:first-of-type p {
+        width: 100%;
+
+        margin-bottom: 15px;
+    }
+
+
+    body > section:first-of-type img {
+        position: static;
+
+        width: 85%;
+        height: 180px;
+
+        margin: auto;
+    }
+
+
+    /* SERVICIOS */
+
+    body > section:nth-of-type(2) {
+        padding: 20px;
+    }
+
+
+    body > section:nth-of-type(2) div {
+        width: 90%;
+
+        margin: 8px 0;
+    }
+
+
+    body > section:nth-of-type(2) div img {
+        height: 160px;
+    }
+
+
+    /* CONTACTO */
+
+    body > section:last-of-type p {
+        display: block;
+
+        margin: 7px;
+    }
+
+
+    /* FOOTER */
+
+    footer p {
+        display: block;
+
+        margin: 0 0 7px;
+    }
+}
+/* IMAGEN PRINCIPAL */
+
+body > section:first-of-type img {
+    position: absolute;
+
+    right: 7%;
+    top: 15px;
+
+    width: 420px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+/* ESPACIO PARA QUE FUNCIONE LA NAVEGACIÓN DEL MENÚ */
+
+#inicio {
+    min-height: 300px;
+}
+
+#servicios {
+    min-height: 400px;
+}
+
+#contacto {
+    min-height: 180px;
+}
+
+/* Evita que el encabezado tape el título al navegar */
+section {
+    scroll-margin-top: 90px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+#inicio {
+    min-height: 300px;
+}
+
+#servicios {
+    min-height: 420px;
+}
+
+#contacto {
+    min-height: 180px;
+}
+
+#inicio,
+#servicios,
+#contacto {
+    scroll-margin-top: 90px;
+}
+/* =========================================
+   PÁGINA DE SERVICIOS
+========================================= */
+
+.pagina-servicios {
+    background-color: #fff9f7;
+}
+
+
+/* CONTENIDO DEL CATÁLOGO */
+
+.catalogo {
+    padding: 30px 7% 40px;
+    text-align: center;
+}
+
+
+/* TÍTULO */
+
+.catalogo h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 35px;
+    font-style: italic;
+    color: #713e4a;
+    margin-bottom: 5px;
+}
+
+
+/* TEXTO DEBAJO DEL TÍTULO */
+
+.texto-catalogo {
+    color: #6b565b;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+
+/* CONTENEDOR DE TARJETAS */
+
+.tarjetas-servicios {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1250px;
+
+    margin: auto;
+}
+
+
+/* CADA TARJETA */
+
+.tarjeta-servicio {
+    background-color: white;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(113, 62, 74, 0.15);
+
+    padding-bottom: 22px;
+
+    min-height: 390px;
+
+    transition: 0.3s;
+}
+
+
+/* FOTOS MÁS GRANDES */
+
+.tarjeta-servicio img {
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* NOMBRE DEL SERVICIO */
+
+.tarjeta-servicio h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #8d4d5c;
+
+    font-size: 22px;
+
+    margin: 15px 10px 8px;
+}
+
+
+/* DESCRIPCIÓN */
+
+.tarjeta-servicio p {
+    color: #5c4a4e;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    padding: 0 18px;
+
+    min-height: 45px;
+}
+
+
+/* BOTÓN DE PRECIO */
+
+.tarjeta-servicio strong {
+    display: inline-block;
+
+    margin-top: 14px;
+
+    color: #713e4a;
+
+    background-color: #f3e3de;
+
+    padding: 9px 20px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+}
+/* =========================================
+   PÁGINA DE INICIO GAB-NAILS
+========================================= */
+
+.pagina-inicio {
+    background-color: #fff9f7;
+}
+
+
+/* PORTADA PRINCIPAL */
+
+.portada-inicio {
+    min-height: 330px;
+
+    background-color: #f0d8d2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 35px 9%;
+}
+
+
+/* TEXTO PRINCIPAL */
+
+.texto-inicio {
+    width: 45%;
+}
+
+
+.texto-inicio h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 48px;
+
+    font-style: italic;
+
+    color: #713e4a;
+
+    margin-bottom: 5px;
+}
+
+
+.texto-inicio h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #9b5968;
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+
+.texto-inicio p {
+    color: #57464a;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    margin-bottom: 22px;
+}
+
+
+/* BOTÓN */
+
+.boton-inicio {
+    display: inline-block;
+
+    background-color: #713e4a;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 22px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.boton-inicio:hover {
+    background-color: #9b5968;
+}
+
+
+/* IMAGEN PRINCIPAL */
+
+.imagen-inicio {
+    width: 45%;
+}
+
+
+.imagen-inicio img {
+    width: 100%;
+
+    height: 270px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   QUIÉNES SOMOS
+========================================= */
+
+.quienes-somos {
+    text-align: center;
+
+    padding: 30px 15%;
+
+    background-color: #fff9f7;
+}
+
+
+.quienes-somos h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 30px;
+
+    font-style: italic;
+
+    color: #713e4a;
+
+    margin-bottom: 12px;
+}
+
+
+.quienes-somos p {
+    color: #57464a;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   INFORMACIÓN
+========================================= */
+
+.informacion-inicio {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 10px 7% 35px;
+
+    background-color: #fff9f7;
+}
+
+
+.bloque-inicio {
+    width: 30%;
+
+    background-color: white;
+
+    text-align: center;
+
+    padding: 22px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(113, 62, 74, 0.15);
+}
+
+
+.bloque-inicio h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #9b5968;
+
+    font-size: 19px;
+
+    margin-bottom: 10px;
+}
+
+
+.bloque-inicio p {
+    color: #57464a;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 800px) {
+
+    .portada-inicio {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 20px;
+    }
+
+
+    .texto-inicio {
+        width: 100%;
+
+        margin-bottom: 25px;
+    }
+
+
+    .texto-inicio h1 {
+        font-size: 38px;
+    }
+
+
+    .imagen-inicio {
+        width: 100%;
+    }
+
+
+    .imagen-inicio img {
+        height: 230px;
+    }
+
+
+    .quienes-somos {
+        padding: 30px 25px;
+    }
+
+
+    .informacion-inicio {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .bloque-inicio {
+        width: 90%;
+    }
+
+}
+/* =========================================
+   PÁGINA DE CONTACTO
+========================================= */
+
+.pagina-contacto {
+    background-color: #fff9f7;
+}
+
+
+/* CONTENIDO GENERAL */
+
+.contenido-contacto {
+    text-align: center;
+    padding: 35px 7% 45px;
+}
+
+
+/* TÍTULO PRINCIPAL */
+
+.contenido-contacto > h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 38px;
+    font-style: italic;
+    color: #713e4a;
+    margin-bottom: 7px;
+}
+
+
+/* TEXTO DEBAJO DEL TÍTULO */
+
+.subtitulo-contacto {
+    color: #6b565b;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   TARJETAS DE CONTACTO
+========================================= */
+
+.tarjetas-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    max-width: 1050px;
+    margin: auto;
+}
+
+
+/* CADA TARJETA */
+
+.tarjeta-contacto {
+    background-color: #ffffff;
+
+    padding: 28px 25px;
+
+    min-height: 180px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 16px rgba(113, 62, 74, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.tarjeta-contacto:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 22px rgba(113, 62, 74, 0.25);
+}
+
+
+/* TÍTULOS DE LAS TARJETAS */
+
+.tarjeta-contacto h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #9b5968;
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
+}
+
+
+/* INFORMACIÓN */
+
+.tarjeta-contacto p {
+    color: #57464a;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 6px;
+}
+
+
+/* =========================================
+   BOTÓN LLAMAR
+========================================= */
+
+.boton-contacto {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 9px 22px;
+
+    background-color: #713e4a;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.boton-contacto:hover {
+    background-color: #9b5968;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   SECCIÓN AGENDAR CITA
+========================================= */
+
+.mensaje-contacto {
+    max-width: 1050px;
+
+    margin: 30px auto 0;
+
+    padding: 28px;
+
+    background-color: #f0d8d2;
+
+    border-radius: 18px;
+
+    box-shadow: 0 4px 15px rgba(113, 62, 74, 0.12);
+}
+
+
+/* TÍTULO AGENDAR */
+
+.mensaje-contacto h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 26px;
+
+    font-style: italic;
+
+    color: #713e4a;
+
+    margin-bottom: 10px;
+}
+
+
+/* TEXTO */
+
+.mensaje-contacto p {
+    color: #57464a;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin: 6px 0;
+}
+
+
+/* =========================================
+   BOTÓN AGENDAR
+========================================= */
+
+.boton-cita {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    background-color: #713e4a;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 25px;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.boton-cita:hover {
+    background-color: #9b5968;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 800px) {
+
+    .contenido-contacto {
+        padding: 25px 20px;
+    }
+
+
+    .contenido-contacto > h1 {
+        font-size: 32px;
+    }
+
+
+    .tarjetas-contacto {
+        grid-template-columns: 1fr;
+    }
+
+
+    .tarjeta-contacto {
+        min-height: 160px;
+    }
+
+
+    .mensaje-contacto {
+        margin-top: 20px;
+    }
+
+}
